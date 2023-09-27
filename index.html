@@ -2,151 +2,281 @@
 <html lang="en">
 
 <head>
-    <title>Ristorante Con Fusion</title>
+    <title>THPT Ông Ích Khiêm</title>
     <meta charset="utf-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
+                        Trang Chủ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Danh sách lớp</a>
+                        <a class="dropdown-item" href="#">Giáo án</a>
+                        <a class="dropdown-item" href="#">Hỗ trợ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="https://www.facebook.com/profile.php?id=100064551048327">Fanpage</a>
+                            <a class="dropdown-item"
+                            href="quantri.html">Ban Quản Trị</a>
+                    </div>
+                </li>
+                <li class="nav-item active"><a class="nav-link" href="./contactus.html"><span
+                            class="fa fa-address-card fa-lg"></span> Công Văn</a></li>
+            </ul>
+            <div class="mr-3 search" style="display: flex; align-items: center;">
+                <input class="form-control mr-sm-1 flex-grow-1" type="search" placeholder="Search" aria-label="Search">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
+            <span class="navbar-text">
+                <a href="#" data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+            </span>
+
         </div>
-    </nav>
-   
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-12 col-sm align-self-center">
-                  <img src="images/logo.png" class="img-fluid">
-                </div>
-              
-            </div>
-        </div>
-    </header>
-    
+    </div>
+
+</nav>
+
 <body>
-    
-        <div class="container">
-          <div class="row row-content">
-            <div class="col-12 col-sm-6"> 
-              <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="images/uthappizza.png" alt="Uthappizza">
-                <div class="media-body">
-                    <h2 class="mt-0">Uthappizza</h2>
-                    <span class="badge badge-danger">HOT</span>
-                    <span class="badge badge-pill badge-secondary">$4.99</span>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                </div>
-              </div>
-            
-            </div>
-            <div class="col-12 col-sm"> 
-              <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="images/uthappizza.png" alt="Uthappizza">
-                <div class="media-body">
-                    <h2 class="mt-0">Uthappizza</h2> 
-                    <span class="badge badge-danger">HOT</span>
-                    <span class="badge badge-pill badge-secondary">$4.99</span>        
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-          <div class="row row-content">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3"> 
 
-            </div>
-            <div class="col col-sm order-sm-first col-md"> 
-              <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="images/alberto.png" alt="Alberto Somayya">
-                <div class="media-body">
-                    <h2 class="mt-0">Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award-winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
-                </div>
-              </div>
-            
-            </div>
-          </div>
+    <div class="side">
+    </div>
+    <div class="container">
+
+        <div id="banner" class="mx-auto" style="text-align: center;">
+            <a href="/">
+                <img src="images/cover.jpg" class="px-4 py-3"
+                    style="margin-top: 10px; justify-content: center; max-width: 100%;" alt="#">
+            </a>
         </div>
-      </body>
+
+    </div>
+    <div class="container main-menu">
+        <div class="main-menu-bar">
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="border">
+            <div class="col-md-12 marqee-container">
+                <marquee class="marqee-text" behavior="scroll" direction="left" style="color: blue; ">
+                    CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI CỔNG THÔNG TIN ĐIỆN TỬ TRƯỜNG THPT ÔNG ÍCH KHIÊM
+                </marquee>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="row" style="padding-top: 10px; justify-content: space-evenly;">
+            <div class="col-lg-5 row main-content">
+                <div class="col-lg-12">
+                    <div class="col-lg-5 new-header">
+                        <h2>Tin Chính</h2>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+
+                        <ul class="notification-list" style="padding-left: 10px;">
+                            <li class="style-text">
+                                <a href="#">
+                                    <p style="padding-top: 1rem;">Danh sách Tuyển Sinh 2023</p>
+                                </a>
+                            </li>
+
+                            <li class="style-text">
+                                <a href="#">
+                                    <p style="padding-top: 1rem;">Thông báo về việc nộp bảo hiểm y tế 2023</p>
+                                </a>
+                            </li>
+
+                            <li class="style-text">
+                                <a href="#">
+                                    <p style="padding-top: 1rem;">Xử lý vi phạm kỷ luật</p>
+                                </a>
+
+                        </ul>
 
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                    <div class="container-fluid" style="margin-left: 0;">
+                        <div class="col-lg-12 table-content">
+                            <table style="width: 100%;" class="table-style">
+                                <tbody>
+                                    <tr>
+                                        <td>Lịch Học</td>
+                                        <td>Lich Học</td>
+                                    </tr>
+                                    <tr>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 12</a></th>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 12</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 11</a></th>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 11</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 10</a></th>
+                                        <th><a href="#" style="color: aliceblue;">Lịch học dành cho khối 10</a></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-           </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+            </div>
+            <div class="col-lg-4" style="padding-top: 10px;">
+                <h2><a href="news.html" style="color: black; text-decoration: none;">Có gì mới</a></h2>
+                <hr>
+                <div class="content">
+                    <p>
+                        Bạo lực học đường là một vấn nạn không chỉ ảnh hưởng đến nền giáo dục mà còn ảnh hưởng đến tâm
+                        lý và sự phát triển của học sinh. Bạo lực học đường có thể bao gồm các hình thức như: bạo lực
+                        thể chất (đánh đập, xô xát, cướp bóc,...), bạo lực tinh thần (chửi rủa, xúc phạm, khinh miệt, cô
+                        lập,...), bạo lực tình dục (sàm sỡ, quấy rối, xâm hại,...), bạo lực trên mạng xã hội (đăng tải
+                        thông tin sai sự thật, phỉ báng, uy hiếp,...).
+                    </p>
+                    <button id="expandButton" onclick="toggleContent()">...</button>
+                    <hr>
+                    <p>
+                        Bạo lực học đường là một vấn nạn không chỉ ảnh hưởng đến nền giáo dục mà còn ảnh hưởng đến tâm
+                        lý và sự phát triển của học sinh. Bạo lực học đường có thể bao gồm các hình thức như: bạo lực
+                        thể chất (đánh đập, xô xát, cướp bóc,...), bạo lực tinh thần (chửi rủa, xúc phạm, khinh miệt, cô
+                        lập,...), bạo lực tình dục (sàm sỡ, quấy rối, xâm hại,...), bạo lực trên mạng xã hội (đăng tải
+                        thông tin sai sự thật, phỉ báng, uy hiếp,...).
+                    </p>
+                    <button id="expandButton" onclick="toggleContent()">...</button>
+                    <hr>
+                    <p>
+                        Bạo lực học đường là một vấn nạn không chỉ ảnh hưởng đến nền giáo dục mà còn ảnh hưởng đến tâm
+                        lý và sự phát triển của học sinh. Bạo lực học đường có thể bao gồm các hình thức như: bạo lực
+                        thể chất (đánh đập, xô xát, cướp bóc,...), bạo lực tinh thần (chửi rủa, xúc phạm, khinh miệt, cô
+                        lập,...), bạo lực tình dục (sàm sỡ, quấy rối, xâm hại,...), bạo lực trên mạng xã hội (đăng tải
+                        thông tin sai sự thật, phỉ báng, uy hiếp,...).
+                    </p>
+                    <button id="expandButton" onclick="toggleContent()">...</button>
+                    <hr>
                 </div>
-           </div>
+
+
+            </div>
+            <div class="col-lg-3" style="justify-content: flex-end; padding-top: 10px;">
+                <section class="highlight-section" style="text-align: left;">
+                    <h2>Tin Nổi Bật</h2>
+                    <hr>
+                    <div class="col-lg-12">
+                        <div class="row">
+
+                            <ul class="notification-list-2" style="padding-left: 5px; display: block">
+                                <li class="style-text">
+                                    <a href="#">
+                                        <p>Vừa qua, hội thao trường THPT Ông Ích Khiêm đã diễn ra vô cùng thành công và
+                                            tốt đẹp.</p>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li class="style-text">
+                                    <a href="#">
+                                        <p>Vừa qua, hội thao trường THPT Ông Ích Khiêm đã diễn ra vô cùng thành công và
+                                            tốt đẹp.</p>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li class="style-text">
+                                    <a href="#">
+                                        <p>Vừa qua, hội thao trường THPT Ông Ích Khiêm đã diễn ra vô cùng thành công và
+                                            tốt đẹp.</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+                <div class="col-lg-12" style="text-align: left; font-size: 30px; padding-top: 20px;">
+                    Dịch vụ
+                </div>
+                <hr>
+                <div class="col-lg-12">
+                    <div class="service">
+                        <div class="anh">
+                            <a href="#"><img src="images/danhba.png" alt=""></a>
+                        </div>
+                        <div class="anh">
+                            <a href="#"><img src="images/duthao.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-  
+    </div>
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-lg-4"
+                style="display: flex; justify-content: center;align-items: center;flex-direction: column;margin-bottom: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/anh1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"><a href="#">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"
+                style="display: flex; justify-content: center;align-items: center;flex-direction: column;margin-bottom: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/anh2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"><a href="#">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"
+                style="display: flex; justify-content: center;align-items: center;flex-direction: column;margin-bottom: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/anh3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"><a href="#">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</div>
+
 </body>
 
 </html>
